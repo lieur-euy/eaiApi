@@ -13,4 +13,5 @@ func AddGudangRouter(r *gin.RouterGroup) {
 	Gudang.GET("/:id", service.GetOneGudang)
 	Gudang.POST("/register", service.PostGudang)
 	Gudang.PUT("/update/:id", service.PutGudang)
+	Gudang.PUT("/delete/:GudangId", service.DeleteGudang)
 }

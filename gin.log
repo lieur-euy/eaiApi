@@ -21,14 +21,12 @@
 [GIN-debug] GET    /v1/Gudangs/:id           --> restapi-tugas/service.GetOneGudang (6 handlers)
 [GIN-debug] POST   /v1/Gudangs/register      --> restapi-tugas/service.PostGudang (6 handlers)
 [GIN-debug] PUT    /v1/Gudangs/update/:id    --> restapi-tugas/service.PutGudang (6 handlers)
+[GIN-debug] PUT    /v1/Gudangs/delete/:GudangId --> restapi-tugas/service.DeleteGudang (6 handlers)
+[GIN-debug] GET    /v1/Status/               --> restapi-tugas/service.GetAllStatus (6 handlers)
+[GIN-debug] GET    /v1/Status/:id            --> restapi-tugas/service.GetOneStatus (6 handlers)
+[GIN-debug] POST   /v1/Status/input          --> restapi-tugas/service.PostStatus (6 handlers)
+[GIN-debug] PUT    /v1/Status/update/:id     --> restapi-tugas/service.PutStatus (6 handlers)
+[GIN-debug] DELETE /v1/Status/delete/:id     --> restapi-tugas/service.DeleteStatus (6 handlers)
 [GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
 Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
 [GIN-debug] Listening and serving HTTP on :8000
-::1 - [2022-06-02 17:31:42.3754347 +0700 +07 m=+20.703458301] PUT /v1/Barang/update/3 200 2.6222ms 
-[GIN] 2022/06/02 - 17:31:42 | 200 |      2.7853ms |             ::1 | PUT      "/v1/Barang/update/3"
-::1 - [2022-06-02 17:32:22.1709922 +0700 +07 m=+60.499015801] POST /v1/users/register 201 672.4µs 
-[GIN] 2022/06/02 - 17:32:22 | 201 |      1.3168ms |             ::1 | POST     "/v1/users/register"
-::1 - [2022-06-02 17:32:26.005802 +0700 +07 m=+64.333825601] GET /v1/users/ 200 1.3196ms 
-[GIN] 2022/06/02 - 17:32:26 | 200 |        2.03ms |             ::1 | GET      "/v1/users/"
-::1 - [2022-06-02 17:32:35.4081437 +0700 +07 m=+73.736167301] POST /v1/Barang/input 201 1.3392ms 
-[GIN] 2022/06/02 - 17:32:35 | 201 |      1.3392ms |             ::1 | POST     "/v1/Barang/input"

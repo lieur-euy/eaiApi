@@ -7,9 +7,7 @@ import (
 type Gudang struct {
 	Id         uint64 `json:"GudangId" sql:"AUTO_INCREMENT" `
 	GudangName string `json:"GudangName"`
-	Alamat     string `json:"Stock"`
-	IdUser     int    `json:"IdUser"`
-	IdGudang   int    `json:"IdGudang"`
+	Alamat     string `json:"Alamat"`
 }
 
 // FindAllGudangs
@@ -35,7 +33,7 @@ func CreateGudang(Gudang Gudang) Gudang {
 // DeleteGudang
 func DeleteGudang(GudangId string) bool {
 	Gudang := Gudang{}
-	result := db.DBconnect.Where("id = ?", GudangId).Delete(&Gudang)
+	result := db.DBconnect.Where("GudangId = ?", GudangId).Delete(&Gudang)
 	return result.RowsAffected > 0
 }
 

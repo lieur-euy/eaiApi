@@ -76,7 +76,7 @@ func PutBarang(c *gin.Context) {
 	//BIND JSON
 	err := c.BindJSON(&Barang)
 	if err != nil {
-		c.JSON(http.StatusBadRequest, "Error gan")
+		c.JSON(http.StatusBadRequest, "Error")
 		return
 	}
 

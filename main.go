@@ -35,11 +35,11 @@ func main() {
 	src.AddUserRouter(v1)
 	src.AddBarangRouter(v1)
 	src.AddGudangRouter(v1)
+	src.AddStatusRouter(v1)
 
 	go func() {
-		// 加入 MySQL Connection
 		database.DD()
-		database.DBconnect.AutoMigrate(&modals.User{}, &modals.Barang{}, &modals.Gudang{})
+		database.DBconnect.AutoMigrate(&modals.User{}, &modals.Barang{}, &modals.Gudang{}, &modals.Status{})
 
 	}()
 

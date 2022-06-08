@@ -44,6 +44,6 @@ func DeleteBarang(BarangId string) bool {
 
 // UpdateBarang
 func UpdateBarang(BarangId string, barang Barang) Barang {
-	db.DBconnect.Model(&barang).Where("id = ?", BarangId).Updates(barang)
+	db.DBconnect.Model(&barang).Where("BarangId = ?", barang).Updates(barang)
 	return barang
 }

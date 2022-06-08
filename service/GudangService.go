@@ -42,7 +42,7 @@ func PostGudang(c *gin.Context) {
 // delete Gudang
 
 func DeleteGudang(c *gin.Context) {
-	isDelete := modals.DeleteGudang(c.Param("id"))
+	isDelete := modals.DeleteGudang(c.Param("GudangId"))
 	if isDelete {
 		c.JSON(http.StatusOK, "Successfully")
 		return
@@ -66,3 +66,4 @@ func PutGudang(c *gin.Context) {
 	}
 	c.JSON(http.StatusOK, "Successfully")
 }
+
